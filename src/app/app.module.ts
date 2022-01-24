@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoModule } from './info/info.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   imports: [
@@ -12,9 +13,9 @@ import { InfoModule } from './info/info.module';
     BrowserAnimationsModule,
     BrowserModule,
     HttpClientModule,
-    InfoModule
+    InfoModule,
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

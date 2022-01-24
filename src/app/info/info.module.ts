@@ -4,7 +4,10 @@ import { InfoComponent } from './info.component';
 import { InfoRoutingModule } from './info-routing.module';
 
 @NgModule({
+  imports: [
+    CommonModule,
+    InfoRoutingModule
+  ],
   declarations: [InfoComponent],
-  imports: [CommonModule, InfoRoutingModule],
 })
-export class InfoModule {}
+export class InfoModule { }
