@@ -1,1 +1,23 @@
 <p>project-issues works!</p>
+<p *ngFor="let issue of issues; index as i">
+  <br />
+  Nº ISSUE {{ issue.number }}
+  <br />
+  TITLE {{ issue.title }}
+  <br />
+  COMMENTS {{ issue.comments }}
+  <br />
+  CREATED AT {{ issue.created_at }}
+  <br />
+  UPDATED AT {{ issue.updated_at }}
+  <br />
+  STATE {{ issue.state }}
+  <br />
+  NAME: {{ issue.user.login }}
+  <br />
+  PHOTO: <img style="width: 140px" src="{{ issue.user.avatar_url }}" alt="" />
+  <br />
+
+  -------------------------------------------
+  <br />
+</p>
