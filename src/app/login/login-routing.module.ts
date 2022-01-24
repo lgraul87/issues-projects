@@ -6,7 +6,9 @@ import { LoginComponent } from './login.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'create-account', component: CreateAccountComponent },
-
+  { path: 'main-inbox', component: CreateAccountComponent },
+  { path: 'project-issues', component: CreateAccountComponent },
+  { path: 'user-repositories', component: CreateAccountComponent },
 ];
 
 @NgModule({
