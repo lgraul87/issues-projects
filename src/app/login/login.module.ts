@@ -11,7 +11,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
+import {MatBadgeModule} from '@angular/material/badge';
 import { CommonModule } from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatBadgeModule,
+    MatButtonModule,
   ],
   exports: [
     LoginRoutingModule,
@@ -39,6 +43,8 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatBadgeModule,
+    MatButtonModule,
   ],
   providers: [MatDatepickerModule],
 })
