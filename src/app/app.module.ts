@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InfoModule } from './info/info.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from './_material/material/material.module';
 
 @NgModule({
   imports: [
