@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { InfoComponent } from './info.component';
+import { InfoComponent } from './info-conponent/info.component';
 
 const routes: Routes = [
   {
@@ -15,7 +15,7 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () =>
-          import('../login/login.module').then((m) => m.LoginModule),
+          import('../project-issues/project-issues.module').then((m) => m.ProjectIssuesModule),
       },
       { path: '**', redirectTo: '/info' },
     ],
