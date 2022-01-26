@@ -7,7 +7,7 @@ import { MaterialModule } from '../_material/material/material.module';
 @NgModule({
   declarations: [ProjectIssuesComponent],
   imports: [CommonModule, ProjectIssuesRoutingModule, MaterialModule],
-  exports: [MaterialModule],
+  exports: [],
   providers: [],
 })
 export class ProjectIssuesModule {}

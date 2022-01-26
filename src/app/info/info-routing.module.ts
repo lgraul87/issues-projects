@@ -3,25 +3,8 @@ import { NgModule } from '@angular/core';
 import { InfoComponent } from './info-conponent/info.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: InfoComponent,
-    children: [
-      {
-        path: 'info',
-        loadChildren: () =>
-          import('../info/info.module').then((m) => m.InfoModule),
-      },
-      {
-        path: '',
-        loadChildren: () =>
-          import('../project-issues/project-issues.module').then((m) => m.ProjectIssuesModule),
-      },
-      { path: '**', redirectTo: '/info' },
-    ],
-  },
+  { path: '', component: InfoComponent },
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
