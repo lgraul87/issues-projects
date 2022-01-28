@@ -9,7 +9,6 @@ import { ServiceService } from 'src/app/service/service.service';
 })
 export class ProjectIssuesComponent implements OnInit {
   issues!: any[];
-  step = 0;
 
   constructor(private service: ServiceService) {}
 
@@ -19,15 +18,4 @@ export class ProjectIssuesComponent implements OnInit {
     });
   }
 
-  setStep(index: number) {
-    this.step = index;
-  }
-
-  nextStep() {
-    this.step++;
-  }
-
-  prevStep() {
-    this.step--;
-  }
 }

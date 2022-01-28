@@ -1,17 +1,25 @@
-.container {
-  align-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
+.green-section {
+  background-color: green;
+  height: 9em;
 }
+.white-section {
+  background-color: white;
+  height: 9em;
+  text-align: left;
+}
+
+.title {
+  font-family: -webkit-body;
+  font-size: xx-large;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 21vw;
+}
+
 
 .header-align {
   margin: 20px;
   height: 4em;
-}
-
-.header-align .mat-expansion-panel-header-title,
-.header-align .mat-expansion-panel-header-description {
-  flex-basis: 0;
 }
 
 .header-align .mat-expansion-panel-header-description {
@@ -19,16 +27,11 @@
   align-items: center;
 }
 
-.header-align .mat-form-field + .mat-form-field {
-  margin-left: 8px;
-}
-
 .green {
   color: green;
   font-size: medium;
   font-family: cursive;
   text-align: center;
-  padding-top: 0.5em;
 }
 
 .icon-profile {
@@ -37,18 +40,4 @@
   border-radius: 20px;
 }
 
-.div {
-  height: 10em;
-  background-color: green;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1 {
-  font-family: -webkit-body;
-  font-size: xx-large;
-  margin-top: 3em;
-  margin-left: 3em;
-}
 

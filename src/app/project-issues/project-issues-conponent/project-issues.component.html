@@ -1,19 +1,25 @@
-<div class="div"></div>
-<div class="container">
-  <h1>Project Issues</h1>
-  <mat-accordion *ngFor="let issue of issues" class="header-align">
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title class="green">{{ issue.state }} </mat-panel-title>
-        <mat-panel-description class="description">
-          {{ issue.title }}
-          <img
-            class="icon-profile"
-            mat-card-image
-            src="{{ issue.user.avatar_url }}"
-          />
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-    </mat-expansion-panel>
-  </mat-accordion>
+<div fxLayout="column" fxLayoutAlign="space-between">
+  <div class="green-section"></div>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-between">
+  <div class="green-white"><h1 class="title">Project Issues:</h1></div>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-around center">
+  <div>
+    <mat-accordion *ngFor="let issue of issues" class="header-align">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="green">{{ issue.state }} </mat-panel-title>
+          <mat-panel-description>
+            {{ issue.title }}
+            <img
+              class="icon-profile"
+              mat-card-image
+              src="{{ issue.user.avatar_url }}"
+            />
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
 </div>
