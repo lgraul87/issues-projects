@@ -3,19 +3,19 @@ import {
   HttpClientTestingModule,
   HttpTestingController,
 } from '@angular/common/http/testing';
-import { ServiceService } from './issue-service';
+import { IssuesService } from './issue-service';
 
-describe('ServiceService', () => {
-  let service: ServiceService;
+describe('issues service', () => {
+  let service: IssuesService;
   let httpTestingController: HttpTestingController;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [ServiceService],
+      providers: [IssuesService],
     });
     httpTestingController = TestBed.inject(HttpTestingController);
-    service = TestBed.inject(ServiceService);
+    service = TestBed.inject(IssuesService);
   });
 
   afterEach(() => {
@@ -26,3 +26,4 @@ describe('ServiceService', () => {
     expect(service.getIssues()).toBeTruthy();
   });
 });
+

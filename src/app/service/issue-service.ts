@@ -6,7 +6,7 @@ import { Issue } from '../interfaces/issue';
 @Injectable({
   providedIn: 'root',
 })
-export class ServiceService {
+export class IssuesService {
   private readonly url = 'https://api.github.com/repos/angular/angular/issues';
 
   constructor(private http: HttpClient) {}
