@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Issue } from 'src/app/interfaces/issue';
 import { ServiceService } from 'src/app/service/service.service';
 
 
@@ -8,7 +9,7 @@ import { ServiceService } from 'src/app/service/service.service';
   styleUrls: ['./project-issues.component.css'],
 })
 export class ProjectIssuesComponent implements OnInit {
-  issues!: any[];
+  issues!: Issue[];
 
   constructor(private service: ServiceService) {}
 
