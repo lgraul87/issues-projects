@@ -3,7 +3,7 @@ import {
   HttpClientTestingModule,
   HttpTestingController,
 } from '@angular/common/http/testing';
-import { ServiceService } from './service.service';
+import { ServiceService } from './issue-service';
 
 describe('ServiceService', () => {
   let service: ServiceService;

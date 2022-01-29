@@ -10,12 +10,8 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'info',
-    loadChildren: () => import('./info/info.module').then((m) => m.InfoModule),
-  },
-  {
     path: '**',
-    redirectTo: '/info',
+    redirectTo: '',
     pathMatch: 'full',
   },
 ];
