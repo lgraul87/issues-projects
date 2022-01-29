@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Issue } from 'src/app/interfaces/issue';
-import { ServiceService } from 'src/app/service/issue-service';
+import { IssuesService } from 'src/app/service/issue-service';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { ServiceService } from 'src/app/service/issue-service';
 export class ProjectIssuesComponent implements OnInit {
   issues!: Issue[];
 
-  constructor(private service: ServiceService) {}
+  constructor(private service: IssuesService) {}
 
   ngOnInit(): void {
     this.service.getIssues().subscribe((issues) => {
